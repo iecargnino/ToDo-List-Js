@@ -1,8 +1,8 @@
-
-import { saludar } from './js/componentes';
 import './styles.css';
 
-const nombre = "Laila";
+import { ToDo, ToDoList } from './classes/index.class';
+import { crearHtml } from './js/componentes';
 
-saludar( 'Emanuel' );
-saludar( nombre );
+export const lista = new ToDoList();
+
+lista.all.forEach( crearHtml );

@@ -1,16 +1,7 @@
-# WEBPACK STARTER
+# ToDo List
 
-Configuracion inicial para añadir el webpack a cualquier proyecto 
-
-### Recordar construir los módulos de NODE y la carperta DIST
-
-
-```
-npm install
-
-npm run build
-```
+Proyecto de Final del curso de Javascript moderno de Fernando Herrera
 
 ### IMPORTANTE:
- Corregir la importación global y local de las imágenes en el webpack.-
+ Corregir localStorage de las tareas completadas y vaciadas del <ul>
 

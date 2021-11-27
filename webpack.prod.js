@@ -1,13 +1,12 @@
 const HtmlWebPackPlugin    = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
-const CopyPlugin = require('copy-webpack-plugin');
+const CopyPlugin           = require('copy-webpack-plugin');
 
 module.exports = {
 
     mode: 'production',
     output: {
-        filename: 'main.[contentHash].js',
+        filename: 'main.[contenthash].js',
         clean: true,
     },
     module: {
@@ -64,7 +63,7 @@ module.exports = {
             filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].[contentHash].css',
+            filename: '[name].[contenthash].css',
             ignoreOrder: false
         }),
         new CopyPlugin({
